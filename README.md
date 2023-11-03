@@ -1,4 +1,89 @@
 Esto es solo el Back-end
+# Sistema de Autenticación API Rest
+
+Este es el sistema de autenticación API Rest, una aplicación desarrollada para proporcionar funcionalidad de autenticación y autorización en aplicaciones web.
+
+## Requisitos
+
+- PHP >= 7.4
+- Laravel >= 8
+- Composer
+
+## Instalación
+
+Siga estos pasos para instalar y configurar el proyecto en su entorno local:
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/tuusuario/authentication_api_rest.git
+
+   Navega al directorio del proyecto:
+
+bash
+Copy code
+cd authentication_api_rest
+Instala las dependencias de PHP:
+
+bash
+Copy code
+composer install
+Copia el archivo de configuración:
+
+bash
+Copy code
+cp .env.example .env
+Genera la clave de la aplicación:
+
+bash
+Copy code
+php artisan key:generate
+Configura tu base de datos en el archivo .env:
+
+makefile
+Copy code
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=apirest_db
+DB_USERNAME=root
+DB_PASSWORD=
+Realiza las migraciones de la base de datos:
+
+bash
+Copy code
+php artisan migrate
+Inicia el servidor de desarrollo:
+
+bash
+Copy code
+php artisan serve
+El sistema de autenticación API Rest ahora debería estar en funcionamiento. Puedes acceder a él en http://localhost:8000.
+
+Uso
+El sistema de autenticación API Rest proporciona puntos finales para registrarse, iniciar sesión, cerrar sesión y administrar usuarios. Puedes acceder a estos puntos finales mediante solicitudes HTTP.
+
+Estructura del Proyecto
+La estructura del proyecto se organiza de la siguiente manera:
+
+app: Contiene los controladores y modelos de Laravel.
+database: Incluye migraciones y seeders para la base de datos.
+public: Archivos públicos accesibles a través de la web.
+resources: Recursos como vistas y assets.
+routes: Define las rutas de la aplicación.
+storage: Almacena archivos generados por la aplicación.
+tests: Pruebas unitarias y de características.
+Contribución
+Si deseas contribuir a este proyecto, sigue estos pasos:
+
+Clona el repositorio a tu cuenta de GitHub.
+Crea una rama con un nombre descriptivo.
+Realiza tus cambios y haz commit.
+Envía una solicitud de extracción a este repositorio.
+
+Contacto
+Si tienes preguntas o comentarios, puedes ponerte en contacto conmigo en celides10@gmail.com o visitar mi perfil en (https://github.com/celides).
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
